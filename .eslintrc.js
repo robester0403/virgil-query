@@ -23,7 +23,7 @@ module.exports = {
     },
   },
   rules: {
-    "prettier/prettier": "error",
+    "prettier/prettier": "warn",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
   },
