@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./MainPage.scss";
 import { useQuery } from "@tanstack/react-query";
 import { getData } from "../../utils/api/api";
 
 const MainPage = () => {
-  const { data, isLoading, error } = useQuery({
+  const { data, error, isLoading } = useQuery({
     queryKey: ["get-photos"],
     queryFn: () => getData("/photos"),
   });
